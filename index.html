@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheap Cars Dealership</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+</head>
+<body>
+<h1>Welcome to FAKE secondhand car dealership</h1>
+<div class="container">
+    <form action="control/getCars.php" method="post">
+        <p>Click to See All Cars</p>
+        <input type="submit" value="Get Cars" class="search"/>
+    </form>
+</div>
+
+<h2>Create a "new" used Car!</h2>
+<form action="control/createNew.php" method="post" >
+    Model: <input type="text" name="model"/><br>
+    Year: <input type="text" name="year"/><br>
+    Price <input type="text" name="price"/><br>
+    <input type="submit" value="Create!"/><br>
+</form>
+
+<h2>Search by ID</h2>
+<form action="control/getId.php" method="post" >
+        Search ID: <input type="number" name="searchId"/><br>
+    <input type="submit" value="Search my Car!"/><br>
+</form>
+
+</body>
+</html>
