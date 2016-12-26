@@ -15,7 +15,7 @@ $loader = new Twig_Loader_Filesystem('../views');
 $twig = new Twig_Environment($loader, array('auto_reload' => true));
 
 $template = $twig -> loadTemplate('ShowAll.html.twig');
-$twigContent = array('cars' => $cars);
+$twigContent = array('cars' => array($cars));
 
 echo $template -> render($twigContent);
 
