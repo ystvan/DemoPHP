@@ -22,10 +22,16 @@
     <input type="submit" value="Create!"/><br>
 </form>
 
-<h2>Search by ID</h2>
+<h2>Search by ID:</h2>
 <form action="control/getId.php" method="post" >
         Search ID: <input type="number" name="searchId"/><br>
     <input type="submit" value="Search my Car!"/><br>
+</form>
+
+<h2>Search by make:</h2>
+<form action="control/getByModel.php" method="post">
+    Search by model: <input type="text" name="searchTxt"/><br>
+    <input type="submit" value="Search my model!"/><br>
 </form>
 
 </body>
